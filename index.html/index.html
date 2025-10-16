@@ -1,12 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!doctype html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projet HTML – Équipe</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; line-height: 1.6; }
+    header, footer { padding: 1rem 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+    section { margin: 2rem 0; }
+    h1, h2 { margin: 0.2rem 0 0.6rem; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .card { border: 1px solid #eee; padding: 0.75rem; border-radius: 8px; }
+  </style>
 </head>
 <body>
-  Hello World
+  <header>
+    <h1>Notre page d’équipe</h1>
+    <p>Petit site collaboratif (Git/GitHub).</p>
+  </header>
+
+  <!-- Étudiant 1 -->
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p>À compléter par Étudiant 1 : qui sommes-nous, objectifs du projet, etc.</p>
+  </section>
+
+  <!-- Étudiant 2 -->
+  <section id="liens-utiles">
+    <h2>Liens utiles</h2>
+    <ul>
+      <li><a href="#" target="_blank" rel="noopener">Lien 1</a></li>
+      <li><a href="#" target="_blank" rel="noopener">Lien 2</a></li>
+      <li><a href="#" target="_blank" rel="noopener">Lien 3</a></li>
+    </ul>
+  </section>
+
+  <!-- Étudiant 3 -->
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="grid">
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Image 1" width="100%"><p>Légende 1</p></div>
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Image 2" width="100%"><p>Légende 2</p></div>
+      <div class="card"><img src="https://via.placeholder.com/300x200" alt="Image 3" width="100%"><p>Légende 3</p></div>
+    </div>
+  </section>
+
+  <!-- Facultatif : si vous voulez une zone Contact simple sans formulaire -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Écrivez-nous à <a href="mailto:team@example.com">team@example.com</a>.</p>
+  </section>
+
+  <!-- Étudiant 3 ajoute aussi ce footer -->
+  <footer>
+    <small>© 2025 — Équipe de 3 — Projet collaboratif</small>
+  </footer>
 </body>
 </html>
